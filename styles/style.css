@@ -3,14 +3,14 @@
 @import url(./normalize.css) layer(reset);
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap') layer(init);
 
-@layer design {
+@layer init {
     :root {
         color-scheme: light dark;
         --header-bg-color: light-dark(#3B3D40, #3B3D40);
         --header-text-color: light-dark(#fff, #fff);
         --primary-color: light-dark(#66D4D4, #2b5a5a);
         --seccondary-color: light-dark(#fff, #fff);
-        --text-color: light-dark(#000, #fff)
+        --text-color: light-dark(#000, #fff);
         --bg-color: light-dark(#fff, #000);
     }
     html {
@@ -18,11 +18,14 @@
         font-size: 100%;
         color: var(--text-color);
     }
+}
+
+@layer design {
     body {
         background-color: var(--bg-color);
     }
     .header {
-        padding: 1em;
+        padding: 1rem;
         background-image: url('../images/header-2560w.webp');
         background-size: cover;
         background-position: top left;
@@ -30,11 +33,59 @@
         color: var(--header-text-color);
         line-height: 1.5;
     }
+    .header__intro {
+        margin-top: 10vh;
+    }
     .header__nav {
         text-align: center;
     }
     .header__link {
+        
+    }
+    h1 {
+        font-size: 4rem;
+        font-weight: extra-bold; /* 800 */
+    }
+    .button {
         display: inline-block;
-        padding-top: 1em;
+        border-radius: 0.5rem;
+        padding: 0.75em 2em;
+    }
+    .button--light {
+        background-color: var(--seccondary-color);
+        color: var(--text-color);
+       text-decoration: none;
+    }
+    main {
+        padding: 1rem;
+        max-width: 960px;
+        margin: 0 auto;
+    }
+    .img-fluid {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+    .img-block {
+        margin: 0;
+    }
+    .img-block__caption {
+        text-align: center;
+        margin-top: 0.5em;
+    }
+    .heading {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: bold;
+    }
+    .heading--h3 {
+        font-size: 1.125em;
+    }
+    .info-block {
+        margin: 1em 0;
+        padding: 1rem;
+        border: 3px solid var(--primary-color);
+    }
+    .info-block__title {
+        margin-bottom: 1.5em;
     }
 }
