@@ -41,6 +41,12 @@
     .header__nav {
         text-align: center;
     }
+    .footer{
+        background-color: var(--header-bg-color);
+        color: var(--header-text-color);
+        text-align: center;
+        padding: 2em 0 2em 0;
+    }
     h1 {
         font-size: 4rem;
         font-weight: extra-bold; /* 800 */
@@ -85,13 +91,26 @@
         font-family: 'Open Sans', sans-serif;
         font-weight: bold;
     }
+    .heading-h1{
+        font-size: calc(1em + 3vw);
+    }
     .heading--h3 {
         font-size: 1.125em;
+    }
+    .heading--bigger-2x{
+        font-size: 2em;
     }
     .info-block {
         margin: 1em 0;
         padding: 1rem;
         border: 3px solid var(--primary-color);
+    }
+    .info-block--massive {
+        background-color: var(--header-bg-color);
+        color: var(--header-text-color);
+        border: none;
+        text-align: center;
+        padding: 1rem
     }
     .info-block__title {
         margin-bottom: 1.5em;
@@ -106,9 +125,10 @@
         color: var(--primary-color);
     }
     .card {
+        padding: 1em;
         vertical-align: top;
         display: inline-block;
-        margin: 0 3.75rem 0 0;
-        width: 17.5em;
+        max-width: 17.5em;
     }
+
 }
