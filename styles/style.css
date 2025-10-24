@@ -80,12 +80,12 @@
         width: 100%;
         height: auto;
     }
-    .img-fluid--half {
+    /* .img-fluid--half {
         display: inline-block;
         width: auto;
         height: 22em;
         margin: 1.0625em 0.4em 0 0;
-    }
+    } */
     .img-block {
         margin: 0;
     }
@@ -136,5 +136,17 @@
         display: inline-block;
         max-width: 17.5em;
     }
-
+    .gallery{
+        margin: -1em;
+        box-sizing: border-box;
+    }
+    .gallery__item {
+        display: inline-block;
+        width: calc(50% - 2em);
+        vertical-align: top;
+        margin: 1em;
+    }
+    .gallery__item--w100 {
+        width: calc(100% - 2em);
+    }
 }
